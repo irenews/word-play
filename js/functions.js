@@ -1,15 +1,4 @@
 'use strict'
-/*
-let part = document.getElementById('ca');
-let result = document.getElementById('result');
-
-part.addEventListener('click', function(e){
-    e.preventDefault;
-    part.style.opacity = 0;
-    result.innerHTML = "CA";
-
-});
-*/
 
 let part = document.querySelectorAll('.part');
 
