@@ -27,6 +27,7 @@ main{
 }
 #result {
     width: 80%;
+    height: 70px;
     margin: 0 auto;
     font-weight: 600;
     text-align: center;
@@ -38,6 +39,7 @@ main{
     display: flex;
     justify-content: space-around;
     padding: 20px;
+    flex-wrap: wrap;
 
 }
 .part {
@@ -48,4 +50,8 @@ main{
     color: #fff;
     background: rgb(36, 156, 36);
     border-radius: 8px;
+    cursor: pointer;
+}
+.part:hover {
+    background: rgb(63, 62, 62);
 }
