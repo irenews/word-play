@@ -21,19 +21,23 @@ function partClick(i) {
         screenValue = result.textContent;
         console.log(screenValue);
         
-
+        
         for (var z = 0; z < okWords.length; z++) {
-
-            if (screenValue == okWords[z]) {
-                
-                setTimeout(() => {
-                    correct.style.display = 'block';
-                }, 100);    
-                
-            }
             
+            var block;
+            if (screenValue == okWords[z]) {
+                block = setTimeout(() => {
+                    correct.style.display = 'block';
+                }, 200);    
+                
+
+                setTimeout(() => {
+                    location.reload(2000);
+                }, 1300);   
+            }   
         }  
-
-
+        
+        
     };
+    
 }
