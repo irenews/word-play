@@ -58,9 +58,7 @@ main{
 .part:hover {
     background: #74c69d;
 }
-
-#correct {
-    display: none;
+.popup {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -69,12 +67,20 @@ main{
     margin: auto;
     width: 250px;
     height: 80px;
-    background: #1b4332;
     border-radius: 20px;
     -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
-#correct p {
+#correct {  
+    background: #1b4332;   
+    display: none;
+}
+#incorrect {  
+    background: #e76f51;   
+    display: none;
+}
+
+#correct p, #incorrect p {
     text-align: center;
     padding: 10px;
     line-height: 60px;
