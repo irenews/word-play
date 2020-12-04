@@ -5,6 +5,7 @@ let okWords = ['CACA', 'CASI', 'CAMA', 'CATA', 'CASA', 'SISA', 'TARTA', 'MAMA', 
 let part = document.querySelectorAll('.part');
 let result = document.getElementById('result');
 var screenValue ='';
+let correct = document.getElementById('correct');
 
 for(var i = 0; i < part.length; i++) {
     part[i].addEventListener("click", partClick(i));
@@ -24,9 +25,13 @@ function partClick(i) {
         for (var z = 0; z < okWords.length; z++) {
 
             if (screenValue == okWords[z]) {
-                alert("Correcto");
-                result.innerHTML =''
-                }
+                
+                setTimeout(() => {
+                    correct.style.display = 'block';
+                }, 100);    
+                
+            }
+            
         }  
 
 
